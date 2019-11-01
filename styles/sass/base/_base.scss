@@ -1,0 +1,27 @@
+// COLOR VARIABLES
+$color-primary: #FAE5FF;
+$color-secondary: #FE6F19;
+$color-tertiary: #882C07;
+$color-quaternary: #4C0341;
+
+$color-dark: #0D0D0D;
+$color-light: #FFF;
+
+// FONT VARIABLES
+$font-primary: 'Pompiere', cursive;
+$font-secondary: 'Lato', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-size: 20px;
+  font-family: $font-primary;
+}
