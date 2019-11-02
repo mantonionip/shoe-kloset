@@ -1,0 +1,82 @@
+.heading-one,
+.heading-two,
+.heading-three,
+.heading-four,
+.heading-five,
+.heading-six {
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+.heading-one {
+    font-size: 3.5rem;
+    line-height: 36px;
+
+    &--span {
+        display: block;
+    }
+}
+
+.heading-two {
+  font-size: 11rem;
+  color: $color-quaternary;
+  line-height: 72px;
+
+  &--span {
+      display: block;
+  }
+}
+
+.heading-three {
+  font-size: 8rem;
+  color: $color-quaternary;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 7rem;
+}
+
+.heading-four,
+.heading-five,
+.heading-six {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
+.heading-four {
+    $color-dark: #0D0D0D;
+}
+
+.heading-five,
+.heading-six {
+    color: $color-quaternary;
+}
+
+p,
+a {
+  font-family: $font-secondary;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 2.9rem;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border: none;
+    padding: 15px 20px;
+    color: $color-light;
+    background-color: $color-tertiary;
+}
+
+.btn-large {
+    background-color: $color-quaternary;
+}

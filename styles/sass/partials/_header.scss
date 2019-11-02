@@ -1,0 +1,52 @@
+.header {
+    background-image: url(../assets/header-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+
+    &__nav-box {
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+
+    &__logo-box {
+        padding-top: 15px;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__text-box {
+        margin-top: 9rem;
+    }
+    
+    &__image {
+        width: 50%;
+        position: absolute;
+        bottom: -25rem;
+        right: 0;
+        
+    }
+
+}
+
+.header-nav {
+
+    &__list {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__link {
+        margin-left: 5rem;
+    }
+
+    &__link {
+        color: $color-dark;
+    }
+}

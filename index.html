@@ -13,36 +13,42 @@
 <body>
     <!-- HEADER STARTS HERE -->
     <header id="home" class="header">
-        <div class="header__logo-box">
-            <h1 class="heading-one">Shoe Kloset</h1>
-        </div>
-
-        <!-- navigation starts here -->
-        <div class="header__navigation">
-            <nav class="header-nav">
-                <ul class="header-nav__list">
-                    <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">home</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">about</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">blog</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header__text-box">
-            <h2 class="heading-two">
-                <span class="heading-two--main">Find</span> 
-                <span class="heading-two--main">something</span> 
-                <span class="heading-two--main">new</span>
-            </h2>
+        <div class="wrapper">
+            <div class="header__nav-box">
+                <div class="header__logo-box">
+                    <h1 class="heading-one">
+                        <span class="heading-one--span">Shoe</span>
+                        <span class="heading-one--span">Kloset</span>
+                    </h1>
+                </div>
+        
+                <!-- navigation starts here -->
+                <div class="header__navigation">
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">home</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">about</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">blog</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="header__text-box">
+                <h2 class="heading-two">
+                    <span class="heading-two--span">Find</span> 
+                    <span class="heading-two--span">something</span> <span class="class="heading-two--span">new</span>
+                </h2>
+            </div>
         </div>
         
         <div class="header__image-box">
@@ -55,37 +61,37 @@
     <main id="main" class="main">
         <!-- section 1 starts here -->
         <section id="about" class="about">
-            <div class="center-text">
-                <h3 class="heading-three">what is under the sea?</h3>
+            <div class="about__text-container wrapper">
+                <h3 class="heading-three">what is shoe romance?</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eius. Ipsa, dolore rerum? Illo nemo vel velit officia error recusandae eaque in dolorum totam mollitia! Quae, dolor esse ex natus id praesentium, sint non accusantium, amet numquam quo vel magni.</p>
-                <a href="#" class="btn-text btn--large">find out more</a>
+                <a href="#" class="btn btn-large">find out more</a>
             </div>
         </section>
         <!-- section 1 ends here -->
 
         <!-- section 2 starts here -->
         <section id="collection" class="collection">
-            <div class="row-top">
-                <div class="row-top__image-container">
-                    <img src="assets/left-image.jpg" alt="A pair of light cream Nike shoes on a light background" class="row-top__img">
+            <div class="col-left">
+                <div class="col-left__image-container">
+                    <img src="assets/left-image.jpg" alt="A pair of light cream Nike shoes on a light background" class="col-left__img">
                 </div>
     
-                <div class="row-top__text-container">
-                    <h4 class="heading-four">new additions</h4>
+                <div class="col-left__text-container">
+                    <h4 class="heading-four">too many options</h4>
                     <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dicta veniam perferendis magni asperiores quis, dolore similique blanditiis ullam fugiat quidem ex enim. Ipsa officia culpa labore harum, nisi pariatur?</p>
-                    <a href="#" class="btn-text">read more</a>
+                    <a href="#" class="btn">read more</a>
                 </div>
             </div>
 
-            <div class="row-bottom">
-                <div class="row-bottom__text-container">
-                    <h4 class="heading-four">too many options</h4>
+            <div class="col-right">
+                <div class="col-right__text-container">
+                    <h4 class="heading-four">new additions</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto eligendi reprehenderit vitae, cumque tenetur? Sapiente labore cupiditate recusandae autem culpa incidunt doloremque nobis. Omnis, alias nam. Libero, ad facilis.</p>
-                    <a href="#" class="btn-text">read more</a>
+                    <a href="#" class="btn">read more</a>
                 </div>
     
-                <div class="row-top__image-container">
-                    <img src="assets/right-image.jpg" alt="variety of women's shoes on a white background" class="row-top__img">
+                <div class="col-right__image-container">
+                    <img src="assets/right-image.jpg" alt="variety of women's shoes on a white background" class="col-right__img">
                 </div>
             </div>
         </section>
@@ -100,19 +106,19 @@
                     <p class="paragraph">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
     
-                <div>
+                <div class="info__text-container">
                     <i class="fas fa-users info__icon" aria-hidden="true"></i>
                     <h5 class="heading-five">community</h5>
                     <p class="paragraph">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
     
-                <div>
+                <div class="info__text-container">
                     <i class="fas fa-file info__icon" aria-hidden="true"></i>
                     <h5 class="heading-five">blog</h5>
                     <p class="paragraph">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
     
-                <div>
+                <div class="info__text-container">
                     <i class="fas fa-phone info__icon" aria-hidden="true"></i>
                     <h5 class="heading-five">get in touch</h5>
                     <p class="paragraph">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
@@ -131,7 +137,7 @@
                 <div class="fashion__text-container">
                     <h6 class="heading-six">popular this month</h6>
                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae qui id repellendus animi, incidunt aut amet quibusdam cum fugiat ea, consequuntur est voluptatum, eum aliquam quae voluptates et. Explicabo rem voluptatem necessitatibus natus illo, numquam assumenda. Quia vitae ratione dignissimos accusamus commodi. Veritatis cum explicabo corporis magnam sunt rerum exercitationem.</p>
-                    <a href="#" class="btn-text btn--large">find out more</a>
+                    <a href="#" class="btn btn-large">find out more</a>
                 </div>
             </div>
         </section>

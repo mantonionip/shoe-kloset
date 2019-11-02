@@ -1,17 +1,6 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "partials/base";
+@import "partials/typography";
 
-@import "base/setup";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/button";
-@import "components/form";
-
-@import "layout/footer";
-@import "layout/header";
-@import "layout/navigation";
-
-@import "pages/home";
+@import "partials/header";
+@import "partials/home";
+@import "partials/footer";

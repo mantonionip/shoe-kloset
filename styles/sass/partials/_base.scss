@@ -15,13 +15,35 @@ $font-secondary: 'Lato', sans-serif;
 * {
     margin: 0;
     padding: 0;
+    // border: 1px solid tomato;
 }
 
 html {
-  font-size: 125%;
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 20px;
   font-family: $font-primary;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 85%;
+  margin: 0 auto;
 }
