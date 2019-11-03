@@ -1,0 +1,79 @@
+.contact {
+    width: 55%;
+    display: flex;
+    position: relative;
+    
+    &__form {
+        background-color: $color-light;
+        box-shadow: -4rem 4rem $color-secondary;
+        width: 100%;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -365px;
+        right: -88%;
+
+        ::placeholder {
+            color: $color-dark;
+            opacity: 1;
+        }
+    }
+    
+    &__form-cell {
+        display: flex;
+        
+    }
+    
+    input[type=text],
+    input[type=email] {
+        flex: 50%;
+        font-size: 1.8rem;
+        border: none;
+        border-bottom: 2.5px solid $color-secondary;
+        margin-bottom: 5rem;
+        padding: 25px 0 15px 30px;
+    }
+
+    input[type=text] {
+        margin-right: 1.5rem;
+    }
+
+    input[type=email] {
+        margin-left: 1.5rem;
+    }
+
+    &__form-bottom {
+        border: 2.5px solid $color-secondary;
+    }
+    
+    &__input-message {
+        width: 100%;
+        font-size: 2rem;
+        border: none;
+        height: 200px;
+        resize: none;
+        padding: 30px 0 0 30px;
+    }
+
+    &__button {
+        font-weight: bold;
+        margin-top: 5rem;
+        height: 5rem;
+        background-color: $color-tertiary;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+    white-space: nowrap;
+}

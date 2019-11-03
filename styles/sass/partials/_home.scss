@@ -22,20 +22,155 @@
 // SECTION COLLECTION
 
 .collection {
-    height: 700px;
     display: flex;
+
+    .col-left,
+    .col-right {
+        display: flex;
+        flex-flow: column nowrap;
+        
+        
+        &__image-container {
+            width: 86%;
+            position: relative;
+        }
+    
+        &__text-container {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 70px 0 30px 0;
+        }
+    
+        .paragraph {
+            margin-bottom: 2.5rem;
+        }
+    }
 }
 
 .col-left {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
     &__image-container {
-        
+        align-self: flex-start;
+        top: -5.5rem;
+    }
+
+    &__img {
+        box-shadow: 4rem 4rem $color-secondary;
+    }
+
+    &__text-container {
+        width: 70%;
+        align-items: flex-end;
+        text-align: right;
     }
 }
 
 .col-right {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__image-container {
+        align-self: flex-end;
+        bottom: -5.5rem;
+    }
+
+    &__img {
+        box-shadow: -4rem 4rem $color-secondary;
+    }
+
+    &__text-container {
+        width: 72%;
+        align-items: flex-start;
+        text-align: left;
+    }
 }
+
+
+// SECTION INFORMATION
+
+.information {
+    background-color: $color-primary;
+
+    .info {
+        padding: 150px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        &__text-container {
+            display: flex;
+            flex: 1 1 50%;
+            margin-bottom: 6rem;
+        }
+
+        &__icon {
+            font-size: 2.6rem;
+            color: $color-light;
+            background-color: $color-quaternary;
+            border-radius: 50%;
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: 10px;
+            margin-right: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 7px;
+        }
+    }
+}
+
+// SECTION FASHION
+
+.fashion {
+    display: flex;
+    padding: 150px 0;
+
+    &__image-container {
+        flex: 35%;
+        position: relative;
+    }
+
+    &__img {
+        // width: 75%;
+        position: absolute;
+        top: -10px;
+        box-shadow: 4rem 4rem $color-secondary;
+    }
+
+    &__text-container {
+        flex: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .paragraph {
+        padding: 15px 0 30px;
+    }
+}
+
+// SECTION GALLERY
+
+.album {
+    background-color: $color-primary;
+    
+    .gallery {
+        padding: 100px 0;
+        display: flex;
+    
+        &__image-container:not(:last-of-type) {
+            margin-right: 4rem;
+        }
+    }
+}
+
+
+
+

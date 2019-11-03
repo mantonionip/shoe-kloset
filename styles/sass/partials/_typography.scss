@@ -20,7 +20,7 @@
 .heading-two {
   font-size: 11rem;
   color: $color-quaternary;
-  line-height: 72px;
+  line-height: 6.4rem;
 
   &--span {
       display: block;
@@ -51,30 +51,16 @@
     color: $color-quaternary;
 }
 
-p,
-a {
-  font-family: $font-secondary;
-}
-
-p {
-    font-size: 2rem;
-    line-height: 2.9rem;
-}
-
-a {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 2.9rem;
-    text-transform: uppercase;
-}
-
 .btn {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
     font-weight: lighter;
     letter-spacing: 2px;
     border: none;
-    padding: 15px 20px;
-    color: $color-light;
+    padding: 10px 15px;
     background-color: $color-tertiary;
+    color: $color-light;
 }
 
 .btn-large {

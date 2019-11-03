@@ -23,14 +23,60 @@ html {
 }
 
 body {
-  font-family: $font-primary;
   font-size: 10px;
-  font-weight: 300;
+  font-family: $font-primary;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 11rem;
+}
+
+h3 {
+  font-size: 8rem;
+}
+
+h4, h5, h6 {
+  font-size: 5.2rem;
+}
+
+p,
+a ,
+textarea,
+input {
+  font-family: $font-secondary;
+}
+
+a {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 3.5rem;
 }
 
 ul,
@@ -44,6 +90,6 @@ a {
 
 .wrapper {
   max-width: 1440px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }

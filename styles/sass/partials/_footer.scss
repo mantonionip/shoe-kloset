@@ -1,0 +1,53 @@
+// HOME PAGE
+
+.footer {
+
+    &__copyright {
+        background-color: $color-tertiary;
+    }
+
+    &__text {
+        text-align: center;
+        color: $color-light;
+    }
+
+    &__copyright-link {
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+}
+
+// CONTACT PAGE
+
+.footer {
+
+    &__information {
+        background-color: $color-primary;
+        padding: 150px 0 180px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-icon {
+        margin-right: 3rem;
+    }
+
+    &__icon {
+        font-size: 2.4rem;
+        color: $color-quaternary;
+    }
+}
+
+.email {
+    margin: 3rem 0 2rem;
+    
+    &__link {
+        font-family: $font-primary;
+        color: $color-quaternary;
+        font-size: 3rem;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+}

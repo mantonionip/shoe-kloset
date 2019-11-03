@@ -1,9 +1,10 @@
+// HERO SECTION HOME PAGE
+
 .header {
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // background-attachment: fixed;
     height: 85vh;
     position: relative;
 
@@ -39,14 +40,61 @@
 
     &__list {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
-
-    &__link {
-        margin-left: 5rem;
-    }
-
+    
     &__link {
         color: $color-dark;
+        margin-left: 7rem;
+        
+        &--active {
+            padding: 5px 15px;
+            background-color: $color-quaternary;
+        }
+
+    }
+
+    &__link--active {
+        margin-left: 7rem;
+    }
+}
+
+// HERO SECTION CONTACT PAGE
+
+.header-contact {
+    background-image: url(../assets/contact-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 65vh;
+    position: relative;
+
+    &__text-box {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .heading-three {
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+}
+
+// HERO SECTION BLOG PAGE 
+
+.header-blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65vh;
+    position: relative;
+    
+    &__image {
+        width: 60%;
+        position: absolute;
+        top: 300px;
+        right: 0;
+        box-shadow: -4rem 4rem $color-secondary;
     }
 }

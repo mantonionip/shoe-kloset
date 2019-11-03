@@ -1,0 +1,16 @@
+.main {
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;;
+}
+
+.aside {
+
+    &__image-container {
+        padding-top: 120px;
+    }
+
+    &__img {
+        width: 30%;
+    }
+}
