@@ -90,11 +90,10 @@
     height: 65vh;
     position: relative;
     
-    &__image {
-        width: 60%;
-        position: absolute;
-        top: 300px;
-        right: 0;
-        box-shadow: -4rem 4rem $color-secondary;
+    &__text-box {
+        display: flex;
+        // justify-content: center;
+        margin-top: 8rem;
+        margin-left: 40%;
     }
 }

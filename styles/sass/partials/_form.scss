@@ -59,12 +59,16 @@
     &__button {
         font-weight: bold;
         margin-top: 5rem;
-        height: 5rem;
+        height: 6rem;
         background-color: $color-tertiary;
-
+        
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    button {
+        cursor: pointer;
     }
 }
 
@@ -76,4 +80,36 @@
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px 1px 1px 1px);
     white-space: nowrap;
+}
+
+// FORM BLOG PAGE 
+
+.comment-form {
+    background-color: $color-primary;
+    
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        &__form-comment {
+            width: 60%;
+            margin-bottom: 10rem;
+
+            ::placeholder {
+                color: $color-dark;
+                opacity: 1;
+            }
+        }
+
+        &__input,
+        &__input-message {
+            background-color: $color-primary;
+        }
+
+        &__button,
+        &__submit {
+            background-color: $color-quaternary;
+        }
+    }
 }

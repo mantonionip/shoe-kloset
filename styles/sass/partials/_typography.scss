@@ -36,8 +36,7 @@
 }
 
 .heading-four,
-.heading-five,
-.heading-six {
+.heading-five {
   font-size: 5.2rem;
   text-transform: uppercase;
 }
@@ -49,6 +48,11 @@
 .heading-five,
 .heading-six {
     color: $color-quaternary;
+}
+
+.heading-six {
+    font-size: 3.2rem;
+    text-transform: uppercase;
 }
 
 .btn {

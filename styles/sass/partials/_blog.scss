@@ -1,16 +1,131 @@
-.main {
+// BLOG SECTION
+
+.blog {
     background-color: $color-primary;
     display: flex;
-    flex-direction: column;;
+    justify-content: space-between;
+    width: 100%;
 }
 
+// aside style
 .aside {
 
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    margin-right: 6.5rem;
+    position: relative;
+
+
     &__image-container {
-        padding-top: 120px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        z-index: 10;
+
+        &::before {
+            content: '';
+            display: block;
+            border-right: 2rem solid $color-light;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: -2rem;
+            margin-top: 2rem;
+        }
     }
 
-    &__img {
-        width: 30%;
+    &__text-container {
+        background-color: $color-light;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        position: relative;
+        left: 2rem;
+        margin-left: 1rem;
+        padding-top: 50px;
+        z-index: 1;
+    }
+
+    &__text {
+        margin: 20px;
+    }
+
+    .paragraph {
+        padding: 10px 0 20px;
+    }
+
+    &__list {
+        padding: 15px 0;
+    }
+
+    &__item {
+        font-family: $font-secondary;
+        font-size: 2rem;
+        list-style: disc inside;
+        padding: 5px 0 5px 5px;
+    }
+}
+
+// article style
+.article {
+    flex: 0 1 60%;
+    background-color: $color-light;
+    
+    &__image-box {
+        width: calc(100% - 4rem);
+        box-shadow: -4rem 4rem $color-secondary;
+        position: relative;
+        top: -210px;
+        left: 4rem;
+    }
+    
+    &__content {
+        margin-top: -90px;
+        padding: 0 15% 0 10%;
+   }
+   
+   .paragraph {
+       margin: 4rem 0;
+    }
+}
+
+.date-paragraph {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+// COMMENTS SECTION
+.comments {
+    background-color: $color-primary;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__sub-container {
+        width: 58%;
+    }
+
+    &__title {
+        margin: 4rem 0 4rem 2rem;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 10rem;
+    }
+    
+    &__image {
+        flex: 40%;
+        margin: 1rem 3rem 0 0;
+    }
+    
+    &__text {
+        padding: 0 16% 0 0;
     }
 }
