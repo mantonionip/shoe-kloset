@@ -20,8 +20,8 @@ a.skip-link {
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 85vh;
+    background-position: center 80%;
+    height: 45vw;
     position: relative;
 
     &__nav-box {
@@ -38,34 +38,74 @@ a.skip-link {
         display: flex;
     }
 
-    &__text-box {
-        margin-top: 9rem;
+    &__wrapping {
+        margin-left: 10%;
+        width: 90%;
+        margin-top: 5%;
+        position: relative;
+        display: flex;
     }
 
     &__image-box {
-        width: 10%;
+        position: absolute;
+        top: -10rem;
+        right: 0;
+        width: 50%;
     }
     
     &__image {
-        width: 50%;
-        position: absolute;
-        top: 10rem;
-        right: 0;
-        
+        width: 100%;
     }
 
 }
 
 .header-nav {
-
+    
     &__list {
         display: flex;
         justify-content: flex-end;
+        transition: all .35s ease;
+    }
+
+    &__item {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0.5em 1.5em;
+        padding: 0;
     }
     
     &__link {
         margin-left: 7rem;
         color: $color-dark !important;
+        padding: 0.3em 0;
+        position: relative;
+        display: inline-block;
+
+        &::before,
+        &::after {
+            height: 3px;
+            position: absolute;
+            content: '';
+            transition: all 0.35s ease;
+            background-color: $color-secondary;
+            width: 0;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            width: 100%;
+        }
+        
         
         &--active {
             padding: 5px 15px;
@@ -82,24 +122,22 @@ a.link-white {
     color: $color-light;
 }
 
+
+
 // HERO SECTION CONTACT PAGE
 
 .header-contact {
     background-image: url(../assets/contact-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
-    height: 65vh;
-    position: relative;
-
+    background-position: center top;
+    height: 70vh;
+    min-height: 400px;
+    
     &__text-box {
         display: flex;
         justify-content: center;
-    }
-    
-    .heading-three {
-        text-transform: uppercase;
-        padding-top: 60px;
+        margin-top: 15rem
     }
 }
 
@@ -110,13 +148,12 @@ a.link-white {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 65vh;
+    height: 70vh;
     position: relative;
     
     &__text-box {
         display: flex;
-        // justify-content: center;
-        margin-top: 8rem;
+        margin-top: 12rem;
         margin-left: 40%;
     }
 }

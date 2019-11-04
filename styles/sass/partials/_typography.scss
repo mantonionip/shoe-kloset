@@ -65,8 +65,22 @@
     padding: 10px 15px;
     background-color: $color-tertiary;
     color: $color-light;
+    transition: all 0.4s ease 0s;
 }
+
+.btn:hover {
+    background: $color-quaternary;
+    letter-spacing: 3px;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
 
 .btn-large {
     background-color: $color-quaternary;
+    padding: 12px 17px;
+}
+
+.btn-large:hover {
+    background: $color-secondary;
+    letter-spacing: 3px;
 }

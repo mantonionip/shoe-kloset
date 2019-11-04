@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shoe Kloset</title>
+    <title>Shoe Kloset | Get In Touch</title>
     <link type="image/png" href="assets/favicon-shoes4.png" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"crossorigin="anonymous">
@@ -44,7 +44,6 @@
                 </div>
                 <!-- navigation ends here -->
             </div>
-        
             <div class="header-contact__text-box">
                 <h1 class="heading-three">get in touch</h1>
             </div>
@@ -53,81 +52,89 @@
     <!-- HEADER ENDS HERE -->
 
     <!-- MAIN STARTS HERE -->
-    <main class="main">
-        <!-- form starts here -->
+    <main class="contact-main">
         <div class="wrapper">
-            <div class="contact">
-                <form action="submit" method="POST" class="contact__form">
-                    <div class="contact__form-top">
-                        <div class="contact__form-cell">
-                            <label for="name" class="visually-hidden">Name</label>
-                            <input type="text" name="name" id="name" class="contact__input" placeholder="Name" required> 
-                        
-                            <label for="email" class="visually-hidden">Email address</label>
-                            <input type="email" name="email" id="email" class="contact__input" placeholder="Email address" required>
+            <div class="contact__main">
+                <section class="contact__information">
+                    <div class="">
+                        <!-- social media starts here -->
+                        <div class="contact__social-media">
+                            <ul class="contact__social-list">
+                                <li class="contact__social-icon">
+                                    <a class="contact__link" href="https://www.facebook.com/" target="_blank"
+                                        aria-label="Visit Shoe Kloset's facebook page">
+                                        <i class="fab fa-facebook-f contact__icon" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__social-icon">
+                                    <a class="contact__link" href="https://www.instagram.com/" target="_blank"
+                                        aria-label="Visit Shoe Kloset's instagram page">
+                                        <i class="fab fa-instagram contact__icon" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__social-icon">
+                                    <a class="contact__link" href="https://twitter.com/" target="_blank"
+                                        aria-label="Visit Shoe Kloset's twitter page">
+                                        <i class="fab fa-twitter contact__icon" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__social-icon">
+                                    <a class="contact__link" href="https://www.whatsapp.com/" target="_blank"
+                                        aria-label="Visit Sho Kloset's whatsapp channel">
+                                        <i class="fab fa-whatsapp contact__icon" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- social media ends here -->
+                
+                        <!-- info starts here -->
+                        <address class="email">
+                            <a href="mailto:info@email.com" class="email__link">info@email.com</a>
+                            <div class="address">
+                                <p class="address__detail">123 - 456 - 7890</p>
+                                <p class="address__detail">123 Queen Street West, Unit 10</p>
+                                <p class="address__detail">Toronto, Ontario</p>
+                                <p class="address__detail">M5V2D5</p>
+                            </div>
+                        </address>
+                        <!-- info ends here -->
                     </div>
+                </section>
     
-                    <div class="contact__form-bottom">
-                        <div class="contact__form-cell">
-                            <label for="message" class="visually-hidden">Message</label>
-                            <textarea name="message" id="message" class="contact__input-message" cols="10" rows="10" placeholder="Message" required></textarea>
+                <!-- form starts here -->
+                <section class="submission">
+                    <form action="submit" method="POST" class="submission__form">
+                        <div class="submission__form-top">
+                            <div class="submission__form-cell">
+                                <label for="name" class="visually-hidden">Name</label>
+                                <input type="text" name="name" id="name" class="submission__input" placeholder="Name" required> 
+                            
+                                <label for="email" class="visually-hidden">Email address</label>
+                                <input type="email" name="email" id="email" class="submission__input" placeholder="Email address" required>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="contact__button">
-                        <button type="submit" class="contact__submit btn btn--xlarge">Submit</button>
-                    </div>
-                </form>
+        
+                        <div class="submission__form-bottom">
+                            <div class="submission__form-cell">
+                                <label for="message" class="visually-hidden">Message</label>
+                                <textarea name="message" id="message" class="submission__input-message" cols="10" rows="10" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+        
+                        <div class="submission__button">
+                            <button type="submit" class="submission__submit btn btn--xlarge">Submit</button>
+                        </div>
+                    </form>
+                </section>
+                <!-- form ends here -->
             </div>
         </div>
-        <!-- form ends here -->
     </main>
     <!-- MAIN ENDS HERE -->
 
     <!-- FOOTER STARTS HERE -->
-    <footer class="footer">
-        <div class="footer__information">
-            <div class="wrapper">
-            	<!-- social media starts here -->
-                <ul class="footer__social-list">
-                    <li class="footer__social-icon">
-                        <a class="footer__link" href="https://www.facebook.com/" target="_blank" aria-label="Visit Shoe Kloset's facebook page">
-                            <i class="fab fa-facebook-f footer__icon" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-icon">
-                        <a class="footer__link" href="https://www.instagram.com/" target="_blank" aria-label="Visit Shoe Kloset's instagram page">
-                            <i class="fab fa-instagram footer__icon" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-icon">
-                        <a class="footer__link" href="https://twitter.com/" target="_blank" aria-label="Visit Shoe Kloset's twitter page">
-                            <i class="fab fa-twitter footer__icon" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-icon">
-                        <a class="footer__link" href="https://www.whatsapp.com/" target="_blank" aria-label="Visit Sho Kloset's whatsapp channel">
-                            <i class="fab fa-whatsapp footer__icon" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            	<!-- social media ends here -->
-                
-            	<!-- info starts here -->
-            	<address class="email">
-                    <a href="mailto:info@email.com" class="email__link">info@email.com</a>
-                    <div class="address">
-                        <p class="address__detail">123 - 456 - 7890</p>
-                        <p class="address__detail">123 Queen Street West, Unit 10</p>
-                        <p class="address__detail">Toronto, Ontario</p>
-                        <p class="address__detail">M5V2D5</p>
-                    </div>
-                </address>
-            	<!-- info ends here -->
-            </div>
-        </div>
-
+    <footer class="footer">    
         <!-- copyright starts here -->
         <div class="footer__copyright">
             <p class="footer__text">Copyright &#169 2019 <a href="https://junocollege.com/" target="_blank" class="footer__copyright-link">Juno College</a></p>

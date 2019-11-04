@@ -1,7 +1,7 @@
 // SECTION ABOUT
 
 .about {
-    height: 95vh;
+    // height: 75vh;
     background-color: $color-primary;
     display: flex;
     align-items: center;
@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 12% 0;
     }
 
     .paragraph {
