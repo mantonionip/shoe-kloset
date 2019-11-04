@@ -15,7 +15,7 @@
     .paragraph {
         width: 80%;
         text-align: center;
-        margin: 4rem 0;
+        margin: 2rem 0 4rem 0;
     }
 }
 
@@ -38,7 +38,7 @@
         &__text-container {
             display: flex;
             flex-flow: column nowrap;
-            padding: 70px 0 30px 0;
+            padding: 70px 0 50px 0;
         }
     
         .paragraph {
@@ -95,9 +95,9 @@
     background-color: $color-primary;
 
     .info {
-        padding: 150px 0;
+        padding: 180px 0 80px;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         
         &__text-container {
             display: flex;
@@ -110,9 +110,9 @@
             color: $color-light;
             background-color: $color-quaternary;
             border-radius: 50%;
-            width: 4.5rem;
-            height: 4.5rem;
-            padding: 10px;
+            width: 75px;
+            height: 35px;
+            padding: 15px;
             margin-right: 2rem;
 
             display: flex;

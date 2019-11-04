@@ -58,6 +58,11 @@ h4, h5, h6 {
   font-size: 5.2rem;
 }
 
+p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
 p,
 a ,
 textarea,
@@ -65,7 +70,9 @@ input {
   font-family: $font-secondary;
 }
 
-a {
+a:link,
+a:visited {
+  text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.9rem;
@@ -74,18 +81,9 @@ a {
   color: $color-light;
 }
 
-p {
-    font-size: 2rem;
-    line-height: 3.5rem;
-}
-
 ul,
 li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .wrapper {

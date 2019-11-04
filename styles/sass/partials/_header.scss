@@ -1,3 +1,19 @@
+// SKIP LINK
+a.skip-link {
+    font-size: 1.2rem;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    z-index: 999;
+    background-color: $color-quaternary;
+    padding: 10px;
+    color: $color-secondary;
+
+    &:focus {
+        left: 0;
+    }
+}
+
 // HERO SECTION HOME PAGE
 
 .header {
@@ -25,11 +41,15 @@
     &__text-box {
         margin-top: 9rem;
     }
+
+    &__image-box {
+        width: 10%;
+    }
     
     &__image {
         width: 50%;
         position: absolute;
-        bottom: -25rem;
+        top: 10rem;
         right: 0;
         
     }
@@ -44,19 +64,22 @@
     }
     
     &__link {
-        color: $color-dark;
         margin-left: 7rem;
+        color: $color-dark !important;
         
         &--active {
             padding: 5px 15px;
             background-color: $color-quaternary;
         }
-
     }
 
     &__link--active {
         margin-left: 7rem;
     }
+}
+
+a.link-white {
+    color: $color-light;
 }
 
 // HERO SECTION CONTACT PAGE

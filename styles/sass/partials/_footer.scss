@@ -23,7 +23,7 @@
 
     &__information {
         background-color: $color-primary;
-        padding: 150px 0 180px;
+        padding: 150px 0 120px;
     }
 
     &__social-list {
@@ -35,9 +35,18 @@
     }
 
     &__icon {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         color: $color-quaternary;
     }
+}
+
+address {
+    font-style: normal;
+}
+
+.email a {
+    font-size: 3rem;
+    color: $color-quaternary;
 }
 
 .email {
@@ -45,9 +54,10 @@
     
     &__link {
         font-family: $font-primary;
-        color: $color-quaternary;
-        font-size: 3rem;
-        font-weight: lighter;
         letter-spacing: 2px;
     }
+}
+
+.address {
+    margin-top: 2rem;
 }
