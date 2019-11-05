@@ -1,8 +1,9 @@
+@import "partials/setup";
+@import "partials/mixins";
 @import "partials/base";
 @import "partials/typography";
-
-@import "partials/header";
 @import "partials/home";
+@import "partials/header";
 @import "partials/blog";
 @import "partials/contact";
 @import "partials/footer";

@@ -24,6 +24,15 @@ a.skip-link {
     height: 45vw;
     position: relative;
 
+    @include respond-1100 {
+        height: 55vw;
+    }
+
+    @include respond-768 {
+        background-position: left;
+        height: 90vw;
+    }
+
     &__nav-box {
         display: flex;
         padding-top: 30px;
@@ -44,17 +53,55 @@ a.skip-link {
         margin-top: 5%;
         position: relative;
         display: flex;
+
+        @include respond-768 {
+            margin-left: 5%;
+        }
     }
 
     &__image-box {
+        width: 55%;
         position: absolute;
         top: -10rem;
         right: 0;
-        width: 50%;
+
+        @include respond-1100 {
+            width: 50%;
+            top: -7rem;
+        }
+
+        @include respond-1100 {
+            width: 50%;
+            top: -2rem;
+        }
+
+        @include respond-950 {
+            top: -3rem;
+        }
+
+         @include respond-768 {
+            display: none;
+        }
     }
     
     &__image {
         width: 100%;
+    }
+
+    .heading-two {
+        
+        @include respond-1280 {
+            font-size: 9rem;
+            line-height: 6rem;
+        }
+
+        @include respond-1100 {
+            color: $color-light;
+        }
+
+        @include respond-768 {
+            padding-top: 50px;
+        }
     }
 
 }
@@ -62,24 +109,40 @@ a.skip-link {
 .header-nav {
     
     &__list {
+        padding-top: 6px;
         display: flex;
         justify-content: flex-end;
         transition: all .35s ease;
+
+        @include respond-768 {
+            display: none;
+        }
     }
 
     &__item {
-        display: inline-block;
         list-style: outside none none;
-        margin: 0.5em 1.5em;
         padding: 0;
     }
     
     &__link {
         margin-left: 7rem;
         color: $color-dark !important;
+        text-shadow: 0 1px $color-light;
         padding: 0.3em 0;
         position: relative;
-        display: inline-block;
+
+        @include respond-1280 {
+            margin-left: 5rem;
+        }
+
+        @include respond-1100 {
+            margin-left: 4rem;
+        }
+
+        @include respond-950 {
+            margin-left: 3rem;
+        }
+        
 
         &::before,
         &::after {

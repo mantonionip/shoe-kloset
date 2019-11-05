@@ -129,3 +129,35 @@
         padding: 0 16% 0 0;
     }
 }
+
+// FORM BLOG PAGE 
+
+.comment-form {
+    background-color: $color-primary;
+    
+    .submission {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        &__form-comment {
+            width: 60%;
+            margin-bottom: 10rem;
+
+            ::placeholder {
+                color: $color-dark;
+                opacity: 1;
+            }
+        }
+
+        &__input,
+        &__input-message {
+            background-color: $color-primary;
+        }
+
+        &__button,
+        &__submit {
+            background-color: $color-quaternary;
+        }
+    }
+}

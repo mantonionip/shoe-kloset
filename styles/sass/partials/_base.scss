@@ -15,7 +15,7 @@ $font-secondary: 'Lato', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    // border: 1px solid tomato;
+    border: 1px solid tomato;
 }
 
 html {
@@ -79,6 +79,10 @@ a:visited {
   letter-spacing: 1;
   text-transform: uppercase;
   color: $color-light;
+
+  @include respond-950 {
+    font-size: 1.8rem;
+  }
 }
 
 ul,
@@ -90,4 +94,8 @@ li {
   max-width: 1440px;
   width: 80%;
   margin: 0 auto;
+
+  @include respond-768 {
+    width: 90%;
+  }
 }

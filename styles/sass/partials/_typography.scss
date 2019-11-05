@@ -15,30 +15,48 @@
     &--span {
         display: block;
     }
+
+    @include respond-768 {
+        font-size: 5rem;
+        line-height: 50px;
+    }
 }
 
 .heading-two {
   font-size: 11rem;
   color: $color-quaternary;
-  line-height: 6.4rem;
+  line-height: 7rem;
 
-  &--span {
-      display: block;
-  }
+    &--span {
+    display: block;
+
+    }
 }
 
 .heading-three {
-  font-size: 7rem;
+  font-size: 6.4rem;
   color: $color-quaternary;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 7rem;
+
+  @include respond-1280 {
+      font-size: 5.8rem;
+  }
+
+  @include respond-1100 {
+      font-size: 5rem;
+  }
 }
 
 .heading-four,
 .heading-five {
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   text-transform: uppercase;
+
+  @include respond-1280 {
+      font-size: 4.4rem;
+  }
 }
 
 .heading-four {
@@ -71,16 +89,29 @@
 .btn:hover {
     background: $color-quaternary;
     letter-spacing: 3px;
-    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+    @include respond-768 {
+        background-color: $color-tertiary;
+        letter-spacing: 2px;
+        box-shadow: none;
+    }
 }
 
 
-.btn-large {
+.btn-large,
+.btn-xlarge {
     background-color: $color-quaternary;
     padding: 12px 17px;
 }
 
-.btn-large:hover {
-    background: $color-secondary;
+.btn-large:hover,
+.btn-xlarge:hover {
+    background: $color-secondary !important;
     letter-spacing: 3px;
+
+    @include respond-768 {
+        background-color: $color-quaternary !important;
+        letter-spacing: 2px;
+    }
 }
+

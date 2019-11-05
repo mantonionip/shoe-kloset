@@ -20,6 +20,11 @@
     &__copyright-link:hover {
         color: $color-secondary;
         transform: scale(1.2);
+
+        @include respond-768 {
+            color: $color-light     ;
+            transform: scale(1);
+        }
     }
 }
 
