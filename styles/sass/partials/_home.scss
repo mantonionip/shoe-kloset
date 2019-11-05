@@ -37,6 +37,10 @@
                 width: 100%;
                 text-align: left;
             }
+
+            @include respond-480 {
+                text-align: center;
+            }
     }
 }
 
@@ -83,6 +87,12 @@
             @include respond-768 {
                 width: 90%;
             }
+
+            @include respond-480 {
+                text-align: center;
+                align-items: center;
+                margin: 15% 0;
+            }
         }
         
         .paragraph {
@@ -92,7 +102,17 @@
         &__img {
             display: block;
             height: 100%;  
-            object-fit: cover;          
+            object-fit: cover;
+            
+            @include respond-768 {
+                width: 100%;
+                height: 100%;
+                border-bottom: 3rem solid $color-secondary;
+            }
+
+            @include respond-480 {
+                border-bottom: 2rem solid $color-secondary;
+            }
         }
     }
 }
@@ -170,6 +190,12 @@
             display: flex;
             flex: 1 1 48%;
             margin-bottom: 6rem;
+
+            @include respond-480 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
 
 
@@ -196,12 +222,27 @@
             align-items: center;
             position: relative;
             bottom: 7px;
+
+            @include respond-480 {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .paragraph {
+            @include respond-480 {
+                margin: 1rem 0;
+            }
         }
     }
 }
 
 // SECTION BANNER 
+.banner {
 
+    @include respond-480 {
+        display: none;
+    }
+}
 
 // SECTION FASHION
 
@@ -234,6 +275,17 @@
         @include respond-950 {
             margin-right: 0;
         }
+
+        @include respond-480 {
+            border-bottom: 2rem solid ;
+        }
+
+        @include respond-480 {
+            border-bottom: none;
+            border-right: none;
+            margin-right: 2rem;
+        }
+    
     }
 
     &__img {
@@ -244,6 +296,14 @@
             width: 70%;
             margin: 0 auto;
             box-shadow: 3rem 3rem $color-secondary;
+        }
+
+        @include respond-590 {
+            width: 100%;
+        }
+
+        @include respond-480 {
+            box-shadow: 2rem 2rem $color-secondary;
         }
     }
 
@@ -266,6 +326,10 @@
             align-items: center;
             padding-top: 60px;;
         }
+
+        @include respond-400 {
+            text-align: center;
+        }
     }
 
     .paragraph {
@@ -281,15 +345,30 @@
     .gallery {
         padding: 100px 0;
         display: flex;
+
+        @include respond-590 {
+            flex-direction: column;
+        }
     
         &__image-container:not(:last-of-type) {
             margin-right: 4rem;
+
+            @include respond-590 {
+                margin-right: 0;
+                margin-bottom: 5rem;
+            }
         }
         
         &__img {
             filter: brightness(100%);
             transform: scale(1);
             transition: all 0.5s;
+            
+            @include respond-590 {
+                width: 100%;
+                border: 1rem solid $color-secondary;
+            }
+
     
             &:hover {
                 filter: brightness(130%);

@@ -13,3 +13,19 @@
 @mixin respond-768 {
     @media (max-width: 768px) { @content }
 }
+
+@mixin respond-590 {
+    @media (max-width: 590px) { @content }
+}
+
+@mixin respond-480 {
+    @media (max-width: 480px) { @content }
+}
+
+@mixin respond-400 {
+    @media (max-width: 480px) { @content }
+}
+
+@mixin respond-320 {
+    @media (max-width: 320px) { @content }
+}
