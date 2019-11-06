@@ -62,6 +62,10 @@ a.skip-link {
         position: relative;
         display: flex;
 
+        @include respond-1800 {
+            display: block;
+        }
+
         @include respond-768 {
             margin-left: 5%;
         }
@@ -72,6 +76,10 @@ a.skip-link {
         position: absolute;
         top: -10rem;
         right: 0;
+
+        @include respond-1680 {
+            width: 52%;
+        }
 
         @include respond-1100 {
             width: 50%;
@@ -97,7 +105,6 @@ a.skip-link {
     }
 
     .heading-two {
-        
         @include respond-1280 {
             font-size: 9rem;
             line-height: 6rem;
@@ -125,8 +132,6 @@ a.skip-link {
         @include respond-400 {
             font-size: 5rem;
             line-height: 40px;
-            // display: none;
-            // text-align: center;
         }
 
 
@@ -141,6 +146,10 @@ a.skip-link {
         display: flex;
         justify-content: flex-end;
         transition: all .35s ease;
+
+        @include respond-1680 {
+            padding-top: 10px;
+        }
 
         @include respond-768 {
             display: none;
@@ -201,18 +210,23 @@ a.skip-link {
         &--active {
             padding: 5px 15px;
             background-color: $color-quaternary;
+            color: $color-light;
+            margin-left: 7rem;
+
+            @include respond-1280 {
+                margin-left: 5rem;
+            }
+
+            @include respond-1100 {
+                margin-left: 4rem;
+            }
+
+            @include respond-950 {
+                margin-left: 3rem;
+            }
         }
     }
-
-    &__link--active {
-        margin-left: 7rem;
-    }
 }
-
-a.link-white {
-    color: $color-light;
-}
-
 
 
 // HERO SECTION CONTACT PAGE
@@ -224,6 +238,10 @@ a.link-white {
     background-position: center top;
     height: 70vh;
     min-height: 400px;
+
+    @include respond-480 {
+        height: 100vh;
+    }
     
     &__text-box {
         display: flex;
@@ -239,12 +257,50 @@ a.link-white {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 40vw;
+    min-height: 400px;
+    z-index: 0;
     position: relative;
+
+    @include respond-480 {
+        height: 60vw;
+        background-position: center;
+    }
     
     &__text-box {
-        display: flex;
-        margin-top: 12rem;
-        margin-left: 40%;
+        display: inline-block;
+    }
+
+    .heading-three {
+        margin-top: 10rem;
+        margin-left: 450px;
+
+        @include respond-1680 {
+            font-size: 15rem;
+        }
+
+        @include respond-1280 {
+            margin-top: 4rem;
+            margin-left: 350px;
+        }
+
+        @include respond-1100 {
+            font-size: 8rem;
+            margin-top: 10rem;
+            margin-left: 0;
+        }
+
+        @include respond-768 {
+            margin-top: 8rem;
+        }
+    }
+
+    .heading-one {
+        @include respond-480 {
+            font-size: 5rem;
+            line-height: 50px;
+        }
     }
 }
+
+

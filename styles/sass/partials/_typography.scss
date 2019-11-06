@@ -16,6 +16,11 @@
         display: block;
     }
 
+    @include respond-1680 {
+        font-size: 7rem;
+        line-height: 70px;
+    }
+
     @include respond-768 {
         font-size: 5rem;
         line-height: 50px;
@@ -37,51 +42,61 @@
   color: $color-quaternary;
   line-height: 7rem;
 
+  @include respond-1680 {
+      font-size: 15rem;
+      line-height: 9rem;
+  }
+
     &--span {
     display: block;
     }
 }
 
 .heading-three {
-  font-size: 6.4rem;
-  color: $color-quaternary;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  line-height: 7rem;
+    font-size: 6.4rem;
+    color: $color-quaternary;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 7rem;
 
-  @include respond-1280 {
-      font-size: 5.8rem;
-  }
+    @include respond-1680 {
+        font-size: 9rem;
+        line-height: 9rem;
+    }
 
-  @include respond-1100 {
-      font-size: 5rem;
-  }
+    @include respond-1280 {
+        font-size: 5.8rem;
+    }
 
-  @include respond-590 {
-      font-size: 4rem;
-  }
+    @include respond-1100 {
+        font-size: 5rem;
+    }
 
-  @include respond-480 {
-      font-size: 3.7rem;
-  }
+    @include respond-590 {
+        font-size: 4rem;
+    }
 
-  @include respond-400 {
-      font-size: 2.9rem;
-  }
+    @include respond-480 {
+        font-size: 3.7rem;
+    }
 
-  @include respond-320 {
-      font-size: 2.5rem;
-  }
+    @include respond-400 {
+        font-size: 2.9rem;
+    }
+
+    @include respond-320 {
+        font-size: 2.5rem;
+    }
 }
 
 .heading-four,
 .heading-five {
-  font-size: 4.8rem;
-  text-transform: uppercase;
+    font-size: 4.8rem;
+    text-transform: uppercase;
 
-  @include respond-1280 {
-      font-size: 4.4rem;
-  }
+    @include respond-1280 {
+        font-size: 4.4rem;
+    }
 }
 
 .heading-four {
@@ -102,6 +117,11 @@
 }
 
 h5.heading-five {
+
+    @include respond-1680 {
+        font-size: 5.6rem;
+    }
+
     @include respond-590 {
         font-size: 4rem;
     }
@@ -110,9 +130,19 @@ h5.heading-five {
 .heading-six {
     font-size: 3.2rem;
     text-transform: uppercase;
+
+    @include respond-1680 {
+        font-size: 5rem;
+    }
 }
 
 .paragraph {
+
+     @include respond-1680 {
+      font-size: 2.8rem;
+      line-height: 5rem;
+  }
+
     @include respond-590 {
         font-size: 1.8rem;
     }
@@ -133,6 +163,10 @@ h5.heading-five {
     background-color: $color-tertiary;
     color: $color-light;
     transition: all 0.4s ease 0s;
+
+    @include respond-1680 {
+        padding: 20px;
+    }
 }
 
 .btn:hover {
@@ -151,6 +185,10 @@ h5.heading-five {
 .btn-xlarge {
     background-color: $color-quaternary;
     padding: 12px 17px;
+
+    @include respond-1680 {
+        padding: 20px;
+    }
 }
 
 .btn-large:hover,

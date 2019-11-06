@@ -223,6 +223,11 @@
             position: relative;
             bottom: 7px;
 
+            @include respond-1680 {
+                font-size: 3.6rem;
+                padding: 40px;
+            }
+
             @include respond-480 {
                 margin-bottom: 2rem;
             }
@@ -238,9 +243,31 @@
 
 // SECTION BANNER 
 .banner {
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    height: 60vh;
+    position: relative;
+
+    @include respond-1100 {
+        height: 50vh;
+    }
+
+    @include respond-768 {
+        height: 40vh;
+    }
+
+    @include respond-590 {
+        height: 35vh;
+    }
 
     @include respond-480 {
-        display: none;
+        height: 32vh;
+    }
+
+    @include respond-400 {
+        height: 24vh;
     }
 }
 
@@ -263,6 +290,10 @@
         border-bottom: 4rem solid rgba(0, 0, 0, 0);
         border-right: 4rem solid rgba(0, 0, 0, 0);
         margin-right: 5rem;
+
+        @include respond-1680 {
+            flex: 1 40%;
+        }
 
         @include respond-1280 {
             flex: 1 40%;
@@ -345,9 +376,22 @@
     .gallery {
         padding: 100px 0;
         display: flex;
+        justify-content: space-around;
+
+        @include respond-1680 {
+            justify-content: space-between;
+        }
 
         @include respond-590 {
             flex-direction: column;
+        }
+
+        &__image-container {
+            width: calc(100% / 3);
+
+            @include respond-590 {
+                width: 100%;
+            }
         }
     
         &__image-container:not(:last-of-type) {
@@ -360,9 +404,11 @@
         }
         
         &__img {
+            box-shadow: 1.4rem 1.4rem 2rem (lighten($color: $color-dark, $amount: 30%));
             filter: brightness(100%);
             transform: scale(1);
             transition: all 0.5s;
+            width: 100%;
             
             @include respond-590 {
                 width: 100%;

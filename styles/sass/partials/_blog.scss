@@ -1,21 +1,35 @@
-// BLOG SECTION
-
 .blog {
     background-color: $color-primary;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    align-items: flex-start;
+
+    @include respond-1100 {
+        flex-direction: column;
+    }
 }
 
-// aside style
+// ASIDE SECTION
 .aside {
 
-    flex: 35%;
     display: flex;
     flex-direction: column;
+    flex: 35%;
     padding-top: 120px;
     margin-right: 6.5rem;
     position: relative;
+
+    @include respond-1100 {
+        flex-direction: row;
+        align-items: flex-end;
+        order: 1;
+        padding-top: 0;
+        margin-right: 0;
+        padding: 0 10% 5%;
+
+        @include respond-950 {
+            flex-direction: column;
+        }
+    }
 
 
     &__image-container {
@@ -23,6 +37,20 @@
         position: relative;
         left: 0;
         z-index: 10;
+
+        @include respond-1100 {
+            width: 55%;
+            box-shadow: 2rem 2rem $color-secondary;
+        }
+
+        @include respond-950 {
+            width: 100%;
+        }
+
+        @include respond-480 {
+            box-shadow: none;
+            border-bottom: 2rem solid $color-secondary;
+        }
 
         &::before {
             content: '';
@@ -33,7 +61,17 @@
             position: absolute;
             right: -2rem;
             margin-top: 2rem;
+
+            @include respond-1100 {
+                width: 0;
+                height: 0;
+
+            }
         }
+    }
+
+    &__img {
+        width: 100%;
     }
 
     &__text-container {
@@ -47,10 +85,48 @@
         margin-left: 1rem;
         padding-top: 50px;
         z-index: 1;
+
+        display: flex;
+
+            @include respond-1680 {
+                padding: 80px 20px;
+            }
+
+            @include respond-1100 {
+                width: 40%;
+                left: 4rem;
+                padding-top: 20px;
+                margin-left: 0;
+            }
+
+            @include respond-950 {
+                flex-direction: row;
+                width: 100%;
+                left: 0;
+                padding: 50px 0 30px;
+            }
+
+            @include respond-768 {
+                flex-direction: column;
+            }
     }
 
     &__text {
-        margin: 20px;
+        padding: 0 15px;
+
+        @include respond-1100 {
+            padding: 0 5% 0 8%;
+        }
+
+        @include respond-950 {
+            width: 50%;
+            padding: 0 5%;
+        }
+
+        @include respond-768 {
+            width: 100%;
+            padding: 0 10%;
+        }
     }
 
     .paragraph {
@@ -63,16 +139,33 @@
 
     &__item {
         font-family: $font-secondary;
-        font-size: 2rem;
+        font-size: 1.8rem;
         list-style: disc inside;
         padding: 5px 0 5px 5px;
+
+        @include respond-1680 {
+            font-size: 2.6rem;
+        }
+
+        @include respond-400 {
+            font-size: 1.5rem;
+        }
     }
 }
 
-// article style
+// MAIN SECTION
+.main {
+    flex: 60%;
+
+    @include respond-1100 {
+        flex: 100%;
+    }
+}
+
+// ARTICLE SECTIOM
 .article {
-    flex: 0 1 60%;
     background-color: $color-light;
+    padding-bottom: 20px;
     
     &__image-box {
         width: calc(100% - 4rem);
@@ -80,11 +173,47 @@
         position: relative;
         top: -210px;
         left: 4rem;
+
+        @include respond-1100 {
+            width: calc(100% - 2rem);
+            top: -100px;
+            left: 2rem;
+            box-shadow: -2rem 2rem $color-secondary;
+        }
+
+        @include respond-480 {
+            box-shadow: none;
+            width: 100%;
+            left: 0;
+            border-bottom: 2rem solid $color-secondary;
+        }
+    }
+
+    &__image {
+        width: 100%;
     }
     
     &__content {
         margin-top: -90px;
-        padding: 0 15% 0 10%;
+        padding: 0 15% 0 5%;
+
+        @include respond-1100 {
+            padding: 10% 10% 0 10%;
+        }
+
+        @include respond-768 {
+            padding: 15% 10% 0 10%;
+        }
+   }
+
+   .heading-five {
+       @include respond-480 {
+           font-size: 3.2rem;
+       }
+
+       @include respond-400 {
+           font-size: 2.7rem;
+       }
    }
    
    .paragraph {
@@ -95,38 +224,89 @@
 .date-paragraph {
     font-weight: bold;
     margin-bottom: 2rem;
+
+    @include respond-1680 {
+        font-size: 2.6rem;
+    }
+
+    @include respond-480 {
+        font-size: 1.7rem;
+    }
+
+    @include respond-400 {
+        font-size: 1.6rem;
+    }
 }
 
 // COMMENTS SECTION
 .comments {
     background-color: $color-primary;
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    @include respond-1100 {
+        padding: 0 10%;
     }
 
-    &__sub-container {
-        width: 58%;
+    &__container {
+        padding: 0 16% 0 0;
+
+        @include respond-1100 {
+            padding: 0;
+        }
     }
 
     &__title {
         margin: 4rem 0 4rem 2rem;
+
+        @include respond-1100 {
+            margin: 6rem 0 4rem 2rem;
+        }
+
+        @include respond-768 {
+            margin: 6rem 0 4rem 0;
+        }
     }
 
     &__row {
         display: flex;
         margin-bottom: 10rem;
+
+        @include respond-1100 {
+            margin-bottom: 5rem;
+        }
+
+        @include respond-768 {
+            flex-direction: column;
+        }
     }
     
     &__image {
-        flex: 40%;
-        margin: 1rem 3rem 0 0;
+        flex: 25%;
+        margin: 0 5%;
+
+        @include respond-1100 {
+            margin: 0 5% 0 0;
+        }
+    }
+    
+    &__img {
+        width: 100%;
+
+
+        @include respond-768 {
+            width: 25%;
+        }
+
+        @include respond-400 {
+            width: 50%;
+        }
     }
     
     &__text {
-        padding: 0 16% 0 0;
+        flex: 75%;
+
+        @include respond-768 {
+            padding-top: 15px;
+        }
     }
 }
 
@@ -136,19 +316,42 @@
     background-color: $color-primary;
     
     .submission {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
+        padding: 0 16% 0 0;
+
+        @include respond-1100 {
+            padding: 5% 10% 0;
+        }
 
         &__form-comment {
-            width: 60%;
+            width: 100%;
             margin-bottom: 10rem;
+
+            @include respond-1100 {
+                margin-bottom: 5rem;
+            }
 
             ::placeholder {
                 color: $color-dark;
                 opacity: 1;
             }
         }
+        
+        &__form-cell {
+
+            @include respond-768 {
+
+                flex-direction: column;
+
+                input[type=text] {
+                    margin-right: 0;
+                }
+        
+                input[type=email] {
+                    margin-left: 0;
+                }
+            }
+        }
+
 
         &__input,
         &__input-message {
