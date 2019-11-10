@@ -16,11 +16,33 @@
         }
 
         @include respond-1100 {
-            padding: 9% 0;
+            padding: 11% 0;
+        }
+
+        @include respond-950 {
+            padding: 13% 0;
         }
 
         @include respond-768 {
             padding: 10% 0;
+        }
+    }
+
+    h3.heading-three {
+        @include respond-768 {
+            font-size: 5rem;
+        }
+
+        @include respond-590 {
+            font-size: 4rem;
+        }
+
+        @include respond-480 {
+            font-size: 3.2rem;
+        }
+
+        @include respond-400 {
+            font-size: 2.5rem;
         }
     }
 
@@ -406,7 +428,7 @@
         }
         
         &__img {
-            box-shadow: 1.4rem 1.4rem 2rem (lighten($color: $color-dark, $amount: 30%));
+            box-shadow: .4rem .4rem .4rem (lighten($color: $color-dark, $amount: 30%));
             filter: brightness(100%);
             transform: scale(1);
             transition: all 0.5s;

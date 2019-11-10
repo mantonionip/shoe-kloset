@@ -1,3 +1,61 @@
+// HERO SECTION BLOG PAGE 
+
+.header-blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vw;
+    min-height: 400px;
+    z-index: 0;
+    position: relative;
+
+    @include respond-1100 {
+        height: 45vw;
+    }
+
+    @include respond-768 {
+        height: 50vh;
+    }
+
+    @include respond-480 {
+        height: 60vh;
+        background-position: 65%;
+    }
+    
+    &__text-box {
+        display: inline-block;
+    }
+
+    .heading-three {
+        margin-top: 10rem;
+        margin-left: 450px;
+
+        @include respond-1680 {
+            font-size: 15rem;
+        }
+
+        @include respond-1280 {
+            margin-top: 4rem;
+            margin-left: 350px;
+        }
+
+        @include respond-1100 {
+            font-size: 8rem;
+            margin-top: 10rem;
+            margin-left: 0;
+        }
+
+        @include respond-768 {
+            margin-top: 8rem;
+        }
+
+        @include respond-480 {
+            font-size: 7rem;
+        }
+    }
+}
+
 .blog {
     background-color: $color-primary;
     display: flex;
@@ -173,6 +231,7 @@
         position: relative;
         top: -210px;
         left: 4rem;
+        z-index: 1;
 
         @include respond-1100 {
             width: calc(100% - 2rem);

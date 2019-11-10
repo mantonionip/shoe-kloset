@@ -1,3 +1,56 @@
+// HERO SECTION CONTACT PAGE
+
+.header-contact {
+    background-image: url(../assets/contact-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50vw;
+    min-height: 550px;
+
+    @include respond-1280 {
+
+    }
+
+    @include respond-1100 {
+        
+    }
+
+    @include respond-768 {
+        
+    }
+
+    @include respond-590 {
+        
+    }
+
+    @include respond-480 {
+        
+    }
+
+    @include respond-400 {
+        background-position: 20%;
+       height: 90vh;
+       min-height: 450px;
+    }
+    
+    &__text-box {
+        display: flex;
+        justify-content: center;
+        flex: 2 0 auto;
+        margin-top: 25%;
+
+        @include respond-1100 {
+            justify-content: flex-start;
+        }
+
+        @include respond-400 {
+            margin-top: 55%;
+        }
+    }
+}
+
+
 .header-contact p.heading-one {
     font-size: 5rem;
     line-height: 50px;
@@ -7,12 +60,8 @@
 
     margin-top: -7rem;
 
-    @include respond-590 {
-        font-size: 8rem;
-    }
-
     @include respond-480 {
-        font-size: 7rem;
+        font-size: 5.6rem;
     }
 }
 
@@ -151,7 +200,7 @@ address {
         font-size: 1.8rem;
         border: none;
         border-bottom: 2.5px solid $color-secondary;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         padding: 25px 0 15px 30px;
 
         @include respond-1680 {
@@ -161,6 +210,10 @@ address {
 
         @include respond-768 {
             padding: 20px 0 15px 10px;
+        }
+
+        @include respond-480 {
+            margin-bottom: 1rem;
         }
 
         @include respond-400 {
@@ -215,6 +268,10 @@ address {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond-400 {
+            height: 5rem;
+        }
     }
     
     button {

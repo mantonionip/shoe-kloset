@@ -1,3 +1,15 @@
+@mixin respond-2800 {
+    @media (min-width: 2800px) { @content }
+}
+
+@mixin respond-2400 {
+    @media (min-width: 2400px) { @content }
+}
+
+@mixin respond-2200 {
+    @media (min-width: 2200px) { @content }
+}
+
 @mixin respond-1800 {
     @media (min-width: 1800px) { @content }
 }
