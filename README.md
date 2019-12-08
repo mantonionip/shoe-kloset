@@ -1,10 +1,11 @@
-Shoe Kloset
+# Shoe Kloset
 
-Juno College BootCamp - Project Two
+## Juno College BootCamp - Project Two
 
-Live on GitHub pages: https://mantonionip.github.io/mehdi.pilehvarian-project-two/
+### Live on GitHub pages: 
+https://mantonionip.github.io/mehdi.pilehvarian-project-two/
 
-Fully Responsive | Flexbox is used | Sass variables are used
+#### Fully Responsive | Flexbox is used | Sass variables are used
 
 This project is meant to emulate a common task to perform as a front-end developer. A PSD design was provided and I was tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for users regardless of the device on which they are viewing the site.
 
