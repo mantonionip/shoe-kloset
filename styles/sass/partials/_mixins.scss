@@ -1,51 +1,55 @@
 @mixin respond-2800 {
-    @media (min-width: 2800px) { @content }
+    @media (min-width: 2800px) { @content; }
 }
 
 @mixin respond-2400 {
-    @media (min-width: 2400px) { @content }
+    @media (min-width: 2400px) { @content; }
 }
 
 @mixin respond-2200 {
-    @media (min-width: 2200px) { @content }
+    @media (min-width: 2200px) { @content; }
 }
 
 @mixin respond-1800 {
-    @media (min-width: 1800px) { @content }
+    @media (min-width: 1800px) { @content; }
 }
 
 @mixin respond-1680 {
-    @media(min-width: 1680px) { @content }
+    @media(min-width: 1680px) { @content; }
 }
 
 @mixin respond-1280 {
-    @media (max-width: 1280px) { @content }
+    @media (max-width: 1280px) { @content; }
 }
 
 @mixin respond-1100 {
-    @media (max-width: 1100px) { @content }
+    @media (max-width: 1100px) { @content; }
 }
 
 @mixin respond-950 {
-    @media (max-width: 950px) { @content }
+    @media (max-width: 950px) { @content; }
+}
+
+@mixin respond-860 {
+    @media (max-width: 860px) { @content; }
 }
 
 @mixin respond-768 {
-    @media (max-width: 768px) { @content }
+    @media (max-width: 768px) { @content; }
 }
 
 @mixin respond-590 {
-    @media (max-width: 590px) { @content }
+    @media (max-width: 590px) { @content; }
 }
 
 @mixin respond-480 {
-    @media (max-width: 480px) { @content }
+    @media (max-width: 480px) { @content; }
 }
 
 @mixin respond-400 {
-    @media (max-width: 480px) { @content }
+    @media (max-width: 400px) { @content; }
 }
 
 @mixin respond-320 {
-    @media (max-width: 320px) { @content }
+    @media (max-width: 320px) { @content; }
 }

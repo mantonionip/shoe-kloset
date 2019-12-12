@@ -15,7 +15,6 @@ a.skip-link {
 }
 
 // HERO SECTION HOME PAGE
-
 .header {
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
@@ -34,31 +33,22 @@ a.skip-link {
     }
 
     @include respond-950 {
-        height: 65vw;
+        height: 85vw;
     }
 
     @include respond-768 {
-        background-position: 20%;
-        height: 85vh;
+        background-position: left;
     }
 
     @include respond-480 {
         background-position: 20%;
-        height: 80vh;
-    }
-
-    @include respond-400 {
-        // background-position: 15%;
         height: 100vh;
     }
+    
     &__nav-box {
         display: flex;
         padding-top: 30px;
         justify-content: space-between;
-    }
-
-    &__logo-box {
-        padding-top: 15px;
     }
 
     &__navigation {
@@ -74,10 +64,6 @@ a.skip-link {
 
         @include respond-1800 {
             display: block;
-        }
-
-        @include respond-768 {
-            margin-left: 5%;
         }
     }
 
@@ -115,7 +101,7 @@ a.skip-link {
         }
 
         @include respond-768 {
-            padding-top: 50px;
+            padding-top: 35px;
         }
 
         @include respond-590 {
@@ -125,9 +111,9 @@ a.skip-link {
         }
 
         @include respond-480 {
-            font-size: 8rem;
-            line-height: 6rem;
-            padding-top: 45px;
+            font-size: 7rem;
+            line-height: 5rem;
+            padding-top: 100px;
         }
     }
 
@@ -237,8 +223,7 @@ a.skip-link {
         &:hover::after {
             width: 100%;
         }
-        
-        
+         
         &--active {
             padding: 5px 15px;
             background-color: $color-quaternary;
