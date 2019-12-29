@@ -3,7 +3,7 @@
 ## Juno College BootCamp - Project Two
 
 ### Live on GitHub pages: 
-https://mantonionip.github.io/mehdi.pilehvarian-project-two/
+https://mantonionip.github.io/project-two/
 
 #### Fully Responsive | Flexbox is used | Sass variables are used
 
