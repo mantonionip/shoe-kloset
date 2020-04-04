@@ -1,4 +1,4 @@
-# Shoe Kloset
+# Shoe Kloset (multi-page PSD conversion)
 
 ## Juno College BootCamp - Project Two
 
