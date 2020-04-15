@@ -11,4 +11,4 @@ This project is meant to emulate a common task to perform as a front-end develop
 The Project object was to show that I can take a PSD and convert it into a functional, responsive website.
 
 
-#### Fully Responsive | Flexbox | Sass Variables | BEM Methodology
+#### Responsive | Flexbox | Sass Variables | BEM Methodology
